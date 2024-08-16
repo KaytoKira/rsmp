@@ -8,6 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #333;
+            color: #fff;
         }
         .banner {
             text-align: center;
@@ -17,17 +19,18 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         .patch-notes {
             padding: 20px;
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
+            background-color: #444;
+            border: 1px solid #555;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         .patch-notes h2 {
             margin-top: 0;
+            color: #fff;
         }
         .patch-notes ul {
             list-style: none;
@@ -36,7 +39,7 @@
         }
         .patch-notes li {
             padding: 10px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #555;
         }
         .patch-notes li:last-child {
             border-bottom: none;
@@ -54,5 +57,13 @@
             <li>[+] Novos mods</li>
         </ul>
     </div>
+    <!-- Permitir iframe -->
+    <script>
+        if (window.self !== window.top) {
+            document.body.style.overflow = "hidden";
+            document.body.style.width = "100%";
+            document.body.style.height = "100%";
+        }
+    </script>
 </body>
 </html>
